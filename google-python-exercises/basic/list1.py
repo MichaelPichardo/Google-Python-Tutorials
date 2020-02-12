@@ -22,8 +22,8 @@
 # Note: python does not have a ++ operator, but += works.
 def match_ends(words):
     count = 0
-    for i in words:
-        if len(i) >= 2 and i[-1] == i[0]: 
+    for strng in words:
+        if len(strng) >= 2 and strng[0] == strng[-1]: 
             count = count + 1
     return count
 
@@ -35,7 +35,7 @@ def match_ends(words):
 # Hint: this can be done by making 2 lists and sorting each of them
 # before combining them.
 def front_x(words):
-    # +++your code here+++
+    
     return
 
 
