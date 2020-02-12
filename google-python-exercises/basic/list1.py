@@ -68,7 +68,7 @@ def main():
     test(match_ends(['', 'x', 'xy', 'xyx', 'xx']), 2)
     test(match_ends(['aaa', 'be', 'abc', 'hello']), 1)
 
-    print
+    print()
     print('front_x')
     test(front_x(['bbb', 'ccc', 'axx', 'xzz', 'xaa']),
        ['xaa', 'xzz', 'axx', 'bbb', 'ccc'])
@@ -78,7 +78,7 @@ def main():
        ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'])
 
        
-    print
+    print()
     print('sort_last')
     test(sort_last([(1, 3), (3, 2), (2, 1)]),
        [(2, 1), (3, 2), (1, 3)])
