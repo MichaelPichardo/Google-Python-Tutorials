@@ -13,10 +13,14 @@
 # so [1, 2, 2, 3] returns [1, 2, 3]. You may create a new list or
 # modify the passed in list.
 def remove_adjacent(nums):
-    results = []
-    for int_ in nums:
-        if len(results) == 0 or int_ != results[-1]:
-            results.append(int_)    
+    if not nums:
+        return nums
+    cur = nums[0]
+    results = [cur]
+    for int_ in nums[1:]:
+        if int_ != cur:
+            results.append(int_)
+        cur = int_    
     return results
 
 
